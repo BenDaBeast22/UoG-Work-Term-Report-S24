@@ -211,7 +211,7 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-  color: #666;
+  color: black;
   line-height: 1.5em;
 }
 
@@ -2800,7 +2800,7 @@ span.white-background {
 }
 
 #main p {
-  color: rgb(90, 89, 89);
+  color: black;
 }
 
 #main .goals-explained p {
@@ -2843,4 +2843,10 @@ span.white-background {
 .link {
   color: rgb(83, 95, 226);
   text-decoration: underline;
+}
+
+.mobile-video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }

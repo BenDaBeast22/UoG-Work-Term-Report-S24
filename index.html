@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>Ben Co-op Work Term W-24</title>
+    <title>Ben Co-op Work Term S-24</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -94,7 +94,7 @@
               <strong>
                 <header>
                   <h2 style="text-shadow: 1px 1px 1px rgb(37, 37, 41)">
-                    Camis Work Term Report <span class="greenHighlight">W-24</span>
+                    Camis Work Term Report <span class="greenHighlight">S-24</span>
                   </h2>
                 </header>
               </strong>
@@ -115,17 +115,15 @@
           </header>
 
           <p>
-            The purpose of this website is to document my experience at all of my co-op work term placements during my
-            time at the University of Guelph. Currently as of May 2024, I have completed my third co-op work term at a
-            campsite reservation company called Camis as a software developer. In the future I plan to compile a
-            homepage to link together all of my work term reports. As of right now my previous work term report can be
-            accessed by this link:
+            This is my fourth and final work-term report for my program at the University of Guelph. This term was my
+            second term at Camis as a software developer. My last work-term report can be accessed by this link:
             <em
-              ><a class="link" href="https://bendabeast22.github.io/UoG-Work-Term-Report-S22/" target="”_blank”"
-                >Summer 2022 Brock Solutions Work Term Report</a
-              >.</em
-            >
-            To navigate my report you can use the nav bar on the left to scroll to the appropriate section.
+              ><a class="link" href="https://bendabeast22.github.io/UoG-Work-Term-Report-W24/" target="”_blank”"
+                >W-24 Camis Work Term Report</a
+              >.
+            </em>
+            In the future I plan to compile a homepage to link together all of my work term reports. To navigate my
+            report you can use the nav bar on the left to scroll to the appropriate section.
           </p>
         </div>
       </section>
@@ -160,37 +158,54 @@
 
           <div class="left-align-p">
             <p>
-              &emsp; At Camis, I was employed as a software developer on the web squad team. The Web Squad team is
-              primarily responsible for working on the front facing feature of the Camis product Prime and Sprit. Prime
-              is the campground reservation website used by customers to reserve and manage their campsites.
-              <em>Below is an image of the campground reservation website for Parks Canada:</em>
+              &emsp;To get a more detailed account of my role at Camis, the main solutions they offer and what I worked
+              on during my last term see my previous work-term report:
+              <em
+                ><a class="link" href="https://bendabeast22.github.io/UoG-Work-Term-Report-W24/" target="”_blank”"
+                  >W-24 Camis Work Term Report</a
+                >.
+              </em>
+              In brief, Camis has a campsite reservation website called Prime and an application for call centers to
+              make reservations and customize Prime(business rules, content, styles, etc) to the clients needs called
+              Spirit. During my second term at Camis I still ended up working mostly working on the frontend on Prime
+              using Angular. I worked on fixing a lot of bugs. For instance users not being able to proceed past certain
+              pages, page responsiveness issues, or failing race conditions. I also worked on improving our UX/UI. For
+              example I worked on improving our booking category navigation (used for searching for different types of
+              products) experience for mobile. Before users had to click on pagination buttons to view overflowing
+              booking categories. It looked like this for desktop (I don't have a screenshot for mobile):
             </p>
 
             <span class="image featured info-image"><img src="images/parksCanada.png" alt="" /></span>
 
             <p>
-              &emsp;Alternatively, Spirit is used by call centers at campgrounds for bookings by phone and for park
-              management like selling products at the shop. Furthermore, Spirit also has a content management systems
-              built in where the solution can be configured for the customer. For instance in the image of Prime above
-              for Parks Canada you can see that they offer Front Country Camping, Parks Accomadations, Backcountry and
-              Day Use reservations. When I joined the team our team was finishing up a brand new feature called
-              Waitlist. This feature was essentially a lottery where customers could win a reservation at a campsite.
-              <em>Below is an image of the first page of the Waitlist workflow:</em>
+              &emsp;In this ticket I made the navigation scrollable, improved its styling, and changed the icons from
+              images to font awesome icons that could be customized from content management.
+              <em>Below is a video of the improved booking category naviation experience for mobile:</em>
             </p>
-
-            <span class="image featured"
-              ><img src="images/waitlist.png" alt="" style="width: 30%; margin: auto"
-            /></span>
+            
+            <div class="mobile-video">
+              <video width="40%" height="40%" controls muted loop autoplay class>
+                <source src="images/bookingCategoryMobileRecording.mov" />
+              </video>
+            </div>
 
             <p>
-              &emsp;Afterwards our team worked on a variety of smaller UX initiatives such as upgrading the date picker
-              calendar, improving the colour accesability on the map (where users choose which campsite to book), making
-              search fields optional, adding guest check-out and writing end to end tests using Playwright. Throughout
-              the work-term, I primarily worked on the campground reservation website Prime which is built using
-              Angular. Since, I used Angular during my first work-term at Hatch I was able to quickly adapt and start
-              getting my hands dirty in completing more difficult tasks. As my co-op is 8 months, in the next work-termI
-              hope to work more on Spirit the call center and content management system built using the .Net Framework
-              and C# to further expand my skillset.
+              &emsp;Another example of a ticket I worked on is adding a back button to all of our booking work flows that
+              works with the stepper component to return the user to the correct page. 
+            </p>
+
+            <span class="image featured info-image"><img src="images/backButton.png" alt="" /></span>
+
+            <p>
+              &emsp;During the majority of the second half of my work term our team was tasked with ensuring that Prime
+              was certified for passed all of the Web Content Accessibility Guidelines(WCAG). An external organization 
+              reviewed and created tickets for everything they believed violated these guidelines. This ended up taking 
+              up about half of our teams capacity for sprints. I'll talk further about this struggle for our team 
+              in my report focus. Furthermore, our team was trying to switch from Test Cafe to Playwright to improve our 
+              integration testing performance which also took some commitment each sprint. Another initiative our team starting working on towards the end was improving our online
+              store. Prime was mainly built for the purpose of campground reservation so our store experience for purchasing
+              products had a lot to be improved. 
+            </p>
             </p>
           </div>
         </div>
@@ -205,16 +220,16 @@
 
           <div class="sub-header-container">
             <p>
-              During the work term I came up with <em>3 learning goals</em> that I believed would make me a better
-              software developer in the future and would help enhance my abilities in areas that I was missing from
-              University. The <em>3 goals</em> were to:
+              For my second term at Camis I made <em>3 learning goals</em> I believed would make me a better software
+              developer in the future and would help enhance my abilities in areas that I was missing from University.
+              The <em>3 goals</em> were to:
             </p>
 
             <div class="list-container">
               <ol>
-                <li>Improve my technical skills in Angular, RXJS and NGRX</li>
-                <li>Have a good understanding of the Camis Solution</li>
-                <li>Improve my time management skills</li>
+                <li>Improve my leadership skills</li>
+                <li>Improve my presentation and oral communication skills</li>
+                <li>Improve my teamwork skills</li>
               </ol>
             </div>
 
@@ -224,23 +239,25 @@
               </h3>
               <hr />
               <p>
-                &emsp;During my co-op workterm, I wanted to improve my technical literacy in working with Angular, RXJS
-                and NGRX. Even though I learned Angular during my first co-op at Hatch I was only a beginner. By
-                continuing to improve in Angular and difficult techonologies it leverages, I wanted to become a more
-                seasoned Angular and front-end developer able to take on more difficult tasks.
+                &emsp;During my co-op work term, I wanted to improve my leadership skills by sharing my opinion more in
+                meetings, actively participating in solving problems that came up during sprint planning and by fixing
+                bugs our team faces. Since this is my second term at my current co-op, I had a much better understanding
+                of our organization and I believed I hand the ability to start becoming a leader on our team.
               </p>
 
               <p>
-                &emsp;To achieve my goal of becoming proficient in RXJS and NGRX I read documentation and worked on some
-                tickets that used them. For instance, I worked on a ticket that allowed campers to self-check themselves
-                out of the campsite instead of having to manually go to the call-center and check-out. This required
-                having an understanding of some of the NGRX state management going on and using a lot of RXJS functions
-                to update the reservation as being checked-out.
+                &emsp;To be a better leader I more freely gave my opinon on issues our team faced, especially during our
+                teams retro. For instance, a big issues our team faced in an influx of tickets from an outside company
+                for accessibility. I explained what I believed to be the best solution to this problem. To create our
+                own tickets for each workflows accessibility rather than try and resolve the hundereds of tickets
+                created by the outside company. However, I still didn't have as much knowledge as other more experienced
+                members in terms of solutions for tickets during backlog refinement so I didn't provide much leadership
+                in those meetings.
               </p>
 
               <p>
-                &emsp;By the end of the workterm I became much more familiar with Angular, RXJS and NGRX and was able to
-                complete more difficult tickets with hight story points that required a deeper understanding.
+                &emsp;By the end of the work-term, I took a step forward in improving my leadership skills. I more
+                freely gave my opinion on issues our team faced, especially during retro.
               </p>
 
               <h3>
@@ -248,47 +265,55 @@
               </h3>
               <hr />
               <p>
-                &emsp;My second goal during the work term was to better understand the Camis solution. Specifically, I
-                wanted to focous on understanding the intricacies of the web reservation solution Prime, since I would
-                be working mostly, on the front-end to complete my first goal.
+                &emsp;My second goal during the work term was to improve my presentation and oral communication skills.
+                This goal was important to me since I have trouble explaining complicated issues and presenting in front
+                of other people well. I have trouble in this area due to not being able to effectively organize my
+                thoughts before speaking.
               </p>
 
               <p>
-                &emsp;To achieve my goal of improving my understanding of Prime, I worked on a variety of different
-                tickets and asked questions to my teammates when I was stuck. I collaborated with every teammate who
-                speacialized in different areas on at least one ticket and this helped me sharpen my understanding of
-                Primes complications. Moreover, I reviewed teammates PRs to understand their work and did a lot of self
-                testing and exploring of how our website worked.
+                &emsp;To achieve this goal I planned on taking bullet point notes before presenting ideas to my team in
+                meetings and before our bi-weekly sprint review meeting where we show off the tickets we worked on to
+                higher-ups in the company. However, in practice I didn't end up doing this. When I had issues I found it
+                much easier to ask for help 1 on 1 and <em>show rather than tell</em> what problems I was facing. In
+                addition, I found it worked better for me to express my issues and post them in squad chat rather than
+                verbally since this allowed me to get my thoughts in order and be more comprehensible. On the other
+                hand, during sprint review meetings my presentation skills didn't notable improve since the
+                presentations were very straightforward without much engagement from the audience. Rather than a demo of
+                the feature we worked on, it ended up being more of a check to make sure we did the ticket correctly.
+                The presentaion was just to show that the ticket met the acceptance criteria.
               </p>
 
               <p>
-                &emsp;By the end of the workterm I greatly deepened my comprehension of Prime and as a result was able
-                to offer more insight to my teammates in the planning, estimating and sprint retrospective meetings.
+                &emsp;Thus, by the end of the workterm my communication and presentation skills didn't improve much.
+                However, I found better methods of getting help when I was stuck by opting to meet 1 on 1 with teammates
+                more experienced in an issue I was facing, or by writing out my problem in the chat which allowed me to
+                get me thoughts in order, and explain myself clearly and concisely.
               </p>
               <h3>
                 <strong>Goal #3</strong>
               </h3>
               <hr />
               <p>
-                &emsp;The final goal I wanted to achieve this work-term was to improve my time management skills in
-                order to become a more valuable member to the team. I'm often a person who hyper focuses on a single
-                goal until it is complete. However, to be a good web developer team member it's essential to be able to
-                switch to more important tasks, answer questions from other squads, review others work and find time to
-                communicate with the team to ensure all of the work in the sprint gets done and that our team
-                efficiently handles any problems from the software that arise.
+                &emsp;The final goal I wanted to achieve this work term was to improve my teamwork skills at working
+                with other developers to complete tickets. Naturally, I like to work alone in general. This has been the
+                case for most of my education as well. And during my program in Computer Science at University of Guelph
+                most assignments and assessments are entirely individual. Even during the software group project course
+                even though we worked as a group to achieve a goal I mostly worked alone on my individual parts to
+                achieve that goal.
               </p>
 
               <p>
-                &emsp;To improve my time management skills I tried to split up my day for when I worked on each task.
-                For instance, at the start and end of each day I would check the channels for bugs or people asking for
-                help as well as review teammates PRs. Whereas, during the middle of the day I would work on a task and
-                then take breaks where I would again check channels or reflect on whether I needed any help to promptly
-                finish my tickets.
+                &emsp;I ended up doing a pretty good job of completing this goal. By the end of the term, I worked with
+                the majority of members on my team on different types of tickets. I reached out to teammates I believed
+                had expertise in an area when I was stuck and for confirmation on the work I had done. Nevertheless, I
+                could have done better reaching out sooner for help and there were a couple teammates that I didn't work
+                closely with during my time at Camis.
               </p>
 
               <p>
-                &emsp;By the end of the work-term by effectively managing my time I was able to become a better team
-                player at doing work besides working on my own tickets and as a result our teams velocity increased.
+                &emsp;By the end of the work-term by working with most of my teammates I become a better team player and
+                as a result our teams velocity increased.
               </p>
             </div>
           </div>
@@ -309,96 +334,69 @@
             </h3>
 
             <p>
-              &emsp;For the focus of my report, the topic I am going to write about is my experience working on a team
-              as a part of web-squad and its interactions with the other teams at Camis. This is the first co-op where I
-              worked on a large team of people working in the same speacialization as me web-development. I will start
-              by explaining the roles of everyone on the team and how all the teams at Camis function as a whole. Then I
-              will move into the development cycle for our team and finally, I will discuss some problems our team faced
-              and some improvements that could be made to our team as well as its relations to the other teams and
-              management.
+              &emsp;For the focus of my report, the topic I am going to write about the main issues and challenges our team faced
+              this term and how I believe that we could solve them. I will finish off with some key takeaways I believe could help on 
+              work teams I'm on in the future.
             </p>
 
             <h3>
-              <em>Team Composition</em>
+              <em>Prime Accessibility Audit</em>
               <hr />
             </h3>
 
             <p>
-              &emsp;At Camis there are a variety of different teams such as web-squad(my team), field-squad,
-              payment-squad, QA, devops and IT. Every team was made up of a different size and had one co-op student
-              working on the team. My team was made up of 9 people including me. And on our team each member had a
-              niche. Our team lead focoused on difficult tickets requiring more input from higher ups. Two of the
-              developers(Oleks and Julian) specialized working on Spirit and the backend technologies. Another two
-              developers(Alicia and Amninder) specialized in Prime. Nihar was a jack of both trades and worked on a bit
-              of both. Denice was our UI and UX specialist. Tom worked with management to plan our initiatives and
-              organize our work. And finally, Keith was involved in the testing side of our teams work. Our team was
-              very flexible and had the skills to be able to work on most initiatives higher-ups were pushing.
+              &emsp;
+              One of the main challenges our team faced was making Prime accessible to pass the 
+              upcoming accessibility audit. The issue was that an external organization created hundereds of tickets
+              to fix — many of which were very minor — and they were completely unorganized. While I was there we 
+              ended up trying to fill up half of our sprint with these tickets which took up most of ours teams capacity and 
+              still wouldn't allow for us to meet the deadline for the audit.
             </p>
 
             <p>
-              &emsp;Every team at Camis for the most part worked seperately on different projects. Our team due to
-              working on the most front facing features however, worked a bit differently from other other teams since
-              we had to work on many bugs on the fly that users reported in a timely manner. Moreover, contrary to the
-              other teams certain devs would pick up specific tickets. Whereas on other teams the members had much more
-              similar skillsets and worked on any available tasks. The projects that a team were assigned to was decided
-              by higher-ups and the timeline for getting them done was based on the contract due dates with the
-              different parks. Again our team was a bit different in that we had a UI/UX specialist who created projects
-              to improve our websites such as improving our reservation calendar, improving the reservation maps colour
-              accessability and so on.
+              &emsp;I believe a better solution would be for higher ups at Camis to have discussed beforehand this issue with our team
+              before getting an external company to create all these tickets and perform the audit. Since we then would have been 
+              able to solve this situation much more efficiently. A member on our team had previous experience at another company where 
+              they had a much better orgainzation help them pass the accessibility audit and fix the critical issues. Alternatively, I believed 
+              it would be much better for us to create our own tickets for fixing any accessibility issues in every major workflow and use 
+              case for our website. Since, this way it would be much easier to seed out critical issues and it would be a much more organized 
+              approach then the hundereds of tickets from the external organization. Either way, our team should have been more involved in deciding 
+              the approach to completing the audit and its deadline so that we could complete the work without it taking up our entire sprints.
+            </p>
+
+            <p>
+              &emsp;My takeaway from this experience is that before higher-ups make decisions for large epics of work there should be a 
+              meeting with the team involved. Since our team has more expertise in this area we can offer useful feedback to complete 
+              tasks more efficiently.
             </p>
 
             <h3>
-              <em>Development Cycle</em>
+              <em>Sprint Reviews</em>
               <hr />
             </h3>
 
             <p>
-              &emsp;The development cycle for our team at Camis consisted of sprint planning, backlog refinement, future
-              planning, sprint retrospective meetings, and finally sprint review. At Sprint Planning we would fill up
-              our sprints with stuff at the top of the backlog that was our top priority and stop once everyone believed
-              our team was at our capacity. Next, at backlog refinement we would point all of our tickets that were
-              ready using Planning Poker. Next, in the sprint retrospective we would go over charts like the burndown
-              chart. Then we would collaborate on a retro board where each person added sticky notes for what went well
-              and improvements that could be made for the last sprint and we discussed the highest voted stickies. In
-              the future planning meetings we adjusted the timeline in Jira of all the projects we were working on.
-              Finally, during sprint review we demoed each tickets acceptance criteria to ensure the work in the sprint
-              was completed properly. On the daily, we had a standup meeting in the morning where we discussed our
-              tickets in progress, any issues we were facing, and brought up important requests or questions in the
-              different channels on Slack.
+              &emsp;Sprint Review is a meeting that occurs every 2 weeks that was added sometime after I joined Camis 
+              where we verified to higher-ups and people from other squads that our tickets met the acceptance criteria.
+              I found this meeting to be a waste of time. Moreover, This goes against the integrity of the developer since 
+              we already check that each ticket meets the acceptance criteria. Furthermore, the QA team tests and verifies this 
+              as well. In the meetings, there was rarely any feedback and it felt like there was no value to most of the people there.
+              Since we were just going over the acceptance criteria for individual tickets there was no connectedness and the bulk of people in the 
+              meeting probably had no idea what was going on and weren't paying attention.
             </p>
 
-            <h3>
-              <em>Team Problems and Solutions</em>
-              <hr />
-            </h3>
+            <p>    
+              &emsp;Instead what would have been more useful would be to have a monthly demo where each
+              teams presents the features that they worked on for the last month. This way everyone in the company could
+              have an idea of what each team is working on and it would be useful and exciting to the rest of the company.
+              A demo would be much easier to follow and there would be enough bulk of work accomplished to show entire 
+              big features finished.
+            </p>
 
             <p>
-              &emsp;The biggest challenge that our team faced was a lack of communication with higher-ups and there
-              being no accountability on big projects. For example, when our team finished Waitlist a cutting edge
-              feature, and issues arose, there were multiple different people in management roles sending different
-              messages in different threads. This made it difficult for our team to comprehend and come up with a proper
-              solution for the issue. Moreover, there would sometimes be radio silence when the fix was done and our
-              team was waiting for further guidance to apply it. The biggest issue we faced in Waitlist was that after
-              the lottery draw expired, the statuses on the applications page changed an incorrect status. This issues
-              caused confusion from customers who won and claimed their reservation and saw the wrong status on the
-              website. A list of emails for the customers affected was made and sent to the higher-ups to send to the
-              call-centers to make a PR email. And our team made a database fix to the resolve the issue afterwards as
-              well. However, there was a lot of miscommunication and confusion throughout our team of what management
-              wanted, when they wanted it by and what they were doing behind the scenes to address the issue. After the
-              database fix was made it took a couple days before we got a response that fix was actually deployed. In
-              general whenever things got bad and there were issues, multiple higher-ups whithout proper context on the
-              project would spam us with issues, and the process to resolve them was very disorganized and stressful.
-              Additionally, another problem our team faced was that for big projects like Waitlist there didn't seem to
-              be much interest from management or other teams. And when our supervisor would send data of how the draw
-              was going we would only receive engagement from our own squad. This impacted our ability to improve our
-              feature for the customer and for us to be prepared for changes they wanted made.
-            </p>
-            <p>
-              &emsp;To fix this communication issue between our team and our customers. I think it would be beneficial
-              to have someone in management who is accountable for big projects who is kept in the loop with our team
-              and loops us in on any big issues that arise. This way there woudn't be a disorganized scramble to address
-              problems that arise in production and additionally it would allow us to receive better feedback from the
-              customer on the features we add.
+              &emsp;My takeaway from this experience is that every meeting should serve a purpose or be engaging
+              to the audience. Furthermore, rather than having to follow along with higher-ups agendas, teams should be more agile 
+              and have more of a say in their sprint schedule. 
             </p>
           </div>
         </div>
@@ -412,17 +410,19 @@
           </header>
 
           <p>
-            To conclude, my co-op term at Camis was an incredible learning experience for me. It was the first time I
-            worked on such a big team and such as large web development solution. Working at Camis I learned how Prime
-            their camground reservation solution, and Sprit their call-center and content management solution worked.
-            Moreover, I worked on a variety of different tasks and demoed my changes in the Sprint Review. I greatly
-            improved my front-end skills in Angular and became a better teamplayer by the end of the term. Our team
-            faced a few issues such as the lack of accountability on big projects. Since if there had been someone in
-            charge of Wailist (the campsite revervation lottery project) then it would have been a much smoother process
-            to address issues that arose. Moreover, it would enable us to better respond to customer feedback. In spite
-            of all that, our team was able to overcome this and successfully complete all of our projects and promptly
-            respond to any ssues that occured. Overall I had a great time working at Camis and becoming a part of the
-            web squad team!
+            To conclude, during my second term at Camis I became more of a contributor on the team 
+            and started to voice my opinions more openly. I became a better teammate and took steps towards becoming
+            a better leader. Again I mostly worked on the front-end on Prime using 
+            Angular and was much more efficient at finishing tickets.
+            I worked on larger front-end features and fixed bugs more efficiently.
+            During the second half of my term, our teams faced some challenges which I believed could have 
+            handled better. We were tasked with passing an accessibility audit and higher-ups made questionable
+            decisions without our teams opinions that caused us to be inefficient in achieving this goal. I believe 
+            this could have been solved from giving our team more of a voice in how we approached the challenge at hand.
+            Additionally, our bi-weekly sprint review meeting didn't work well for the organization and I believed it could be 
+            an effective meeting by making it into a monthly demo for teams to showcase their work.
+            Overall, despite the challenges, I had a great time working at Camis during my second term and working with the
+            other developers on the web squad team! 
           </p>
         </div>
       </section>
@@ -438,14 +438,15 @@
             Thank you to everyone on the web-squad team! Everyone was very friendly and were always available to help me
             out when I was stuck and were happy to answer any questions I had. I felt like a proper member on the team
             and had the freedom to voice any thoughts that I had. Also it was good to get to know some of the other
-            co-op students and discuss our experiences on different teams.
+            co-op students and discuss our experiences on different teams. We had some fun events in the second half of our 
+            term such as the Camis Olympics where me and 3 other co-ops won a gold at building a tent the fastest.
           </p>
 
           <p style="color: #888">
-            <em>A picture of me and some of the other co-ops at Camis during the solar eclipse:</em>
+            <em>A picture of me and the other co-ops at Camis:</em>
           </p>
 
-          <span class="image featured"><img src="images/coops.JPG" alt="" style="width: 50%; margin: auto" /></span>
+          <span class="image featured"><img src="images/coopsPic.jpeg" alt="" style="width: 50%; margin: auto" /></span>
         </div>
       </section>
       <!-- sources -->
